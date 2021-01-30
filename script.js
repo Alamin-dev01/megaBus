@@ -1,4 +1,4 @@
-// This function for plus / minus button to increase or decrease ticket quantity
+//  plus and minus button 
 function quantityChanger(classType, isIncrease) {
     var type = document.getElementById(classType).value
     if (isIncrease == true) {
@@ -13,7 +13,7 @@ function quantityChanger(classType, isIncrease) {
     totalUpdate();
 }
 
-// To updating subtotal and total price with tax
+//  subtotal and total price with tax
 function totalUpdate() {
     var economyClassQuantity = document.getElementById('economyclass-quantity').value
     var firstClassQuantity = document.getElementById('firstclass-quantity').value
@@ -26,7 +26,7 @@ function totalUpdate() {
     return total
 }
 
-// To handle booking confirmation and error
+// confirmation and error
 function confirmationArea() {
     document.getElementById('mainarea').style.display = "none"
     var totalPrice = totalUpdate();
